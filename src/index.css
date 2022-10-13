@@ -47,6 +47,7 @@ a {
   font-size: 2rem;
   text-transform: uppercase;
   transition: all 0.25s ease;
+  cursor: pointer;
 }
 
 .btn-like:hover {

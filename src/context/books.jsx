@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { API, graphqlOperation } from "aws-amplify";
 import { v4 as uuidv4 } from "uuid";
-import { listBooks } from "../api/queries";
-import { processOrder } from "../api/mutations";
+import { listBooks } from "../graphql/queries";
+import { processOrder } from "../graphql/mutations";
 
 const BookContext = React.createContext();
 
