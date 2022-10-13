@@ -40,14 +40,15 @@ a {
   text-decoration: none;
 }
 
-.btn {
+.btn-like {
   padding: 2rem 6rem;
   background: #4c6e97;
   color: white;
   font-size: 2rem;
   text-transform: uppercase;
+  transition: all 0.25s ease;
 }
 
-.btn:hover {
+.btn-like:hover {
   background: #121c27;
 }
