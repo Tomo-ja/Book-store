@@ -17,6 +17,7 @@ button,
 label,
 input,
 p {
+  all: unset;
   font-size: 2rem;
 }
 

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Link } from '@aws-amplify/ui-react'
+import { Link } from 'react-router-dom'
 
 import { BookContext } from '../context/books'
 
@@ -8,21 +8,19 @@ import StyledBook from '../styles/book.styles'
 
 import Hero from '../components/Hero'
 
+import { Book } from '../typesLibrary'
+
 import sampleBookImage from '../asset/bookSample.jpg'
 
 
-type Book = {
-	id: string,
-	image: string,
-	title: string
-}
+
 const sampleFeaturedBooks: Book[] = [
-	{id: '1', image: '', title: 'sample1'},
-	{id: '2', image: '', title: 'sample2'},
-	{id: '3', image: '', title: 'sample3'},
-	{id: '4', image: '', title: 'sample4'},
-	{id: '5', image: '', title: 'sample5'},
-	{id: '6', image: '', title: 'sample6'},
+	{id: '1', image: '', title: 'sample1', description: '', author: '', price: 0},
+	{id: '2', image: '', title: 'sample2', description: '', author: '', price: 0},
+	{id: '3', image: '', title: 'sample3', description: '', author: '', price: 0},
+	{id: '4', image: '', title: 'sample4', description: '', author: '', price: 0},
+	{id: '5', image: '', title: 'sample5', description: '', author: '', price: 0},
+	{id: '6', image: '', title: 'sample6', description: '', author: '', price: 0},
 
 ]
 
