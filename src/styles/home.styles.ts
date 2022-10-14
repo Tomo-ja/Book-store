@@ -13,17 +13,6 @@ const StyledHome = styled.section`
 		color: white;
 	}
 
-	.books-collection{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-
-		width: 90%;
-		margin: auto;
-
-		text-align: center;
-	}
-
 `
 
 export default StyledHome

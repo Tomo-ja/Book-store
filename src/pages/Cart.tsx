@@ -23,6 +23,7 @@ const sampleFeaturedBooks: BookInCart[] = [
 const Cart = () => {
 
 	const navigation = useNavigate()
+	//TODO: use real data to display
 	const { cart, total, increaseAmount, decreaseAmount} = useContext(CartContext)
 
 

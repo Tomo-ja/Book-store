@@ -5,6 +5,7 @@ import { BookContext } from '../context/books'
 
 import StyledHome from '../styles/home.styles'
 import StyledBook from '../styles/book.styles'
+import StyledBookCollection from '../styles/bookCollection.styles'
 
 import Hero from '../components/Hero'
 
@@ -28,6 +29,7 @@ const Home = () => {
 
 	let { featured } = useContext(BookContext);
 
+	//TODO: delete below
 	if (featured.length === 0) {
 		featured = sampleFeaturedBooks
 	}
@@ -43,16 +45,16 @@ const Home = () => {
 				{featured.length === 0 ? 
 				<h3>No Featured Books Right Now</h3>
 				:
-				<div className='books-collection'>
+				<StyledBookCollection>
 					{featured.map(({id, image, title}: {id: number, image: string, title: string}) => (
-						<StyledBook key={id} margin='1rem 0'>
+						<StyledBook key={id}>
 							<div className='img-wrapper'>
 								<img src={image.length === 0 ? sampleBookImage : image} alt={title} />
 							</div>
 							<Link to={`/books/${id}`} className='btn-like'>details</Link>
 						</StyledBook>
 					))}
-				</div>
+				</StyledBookCollection>
 				}
 				<div>
 

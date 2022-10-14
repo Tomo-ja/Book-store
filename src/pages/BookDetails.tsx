@@ -32,6 +32,7 @@ const BookDetails = () => {
 		return book.id === id
 	})
 
+	// TODO: delete below
 	if(!book) {
 		book = sampleBook
 	}

@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
-interface IBook {
-	margin?: string
-}
 
-const StyledBook = styled.article<IBook>`
+const StyledBook = styled.article`
 
 	display:flex;
 	flex-direction: column;
@@ -13,7 +10,7 @@ const StyledBook = styled.article<IBook>`
 
 	width: 22rem;
   height: 28rem;
-  margin: ${props => props.margin ? props.margin : '3rem 4rem'} ;
+  margin: 1rem 0;
 	background: whitesmoke;
 	border-top: 1px solid #efefef;
 
@@ -36,6 +33,7 @@ const StyledBook = styled.article<IBook>`
 		font-size: 1.7rem;
 		width: 100%;
 		height: 100%;
+		color: white;
 
 		:hover{
 			background: #343c43;
