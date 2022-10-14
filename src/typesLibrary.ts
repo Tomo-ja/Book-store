@@ -5,7 +5,11 @@ export type Book = {
 	description: string,
 	author: string,
 	price: string,
-	featured?: boolean
+	featured: boolean,
+}
+
+export interface BookInCart extends Book {
+	amount: number
 }
 
 export type test2 = {

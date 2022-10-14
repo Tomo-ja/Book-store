@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid';
 import { API, graphqlOperation, Storage } from "aws-amplify";
 import { Authenticator } from '@aws-amplify/ui-react';
@@ -36,7 +36,7 @@ const Admin = () => {
 		}
 		const newValue = e.currentTarget.value
 		setBookDetails(prev => {
-			const newState = {...prev}
+			const newState: Book = {...prev}
 			newState[name] = newValue
 			return newState
 		})
