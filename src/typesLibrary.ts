@@ -1,3 +1,5 @@
+import { Token } from "typescript"
+
 export type Book = {
 	id: string,
 	image: string,
@@ -12,6 +14,9 @@ export interface BookInCart extends Book {
 	amount: number
 }
 
-export type test2 = {
-	name: string
+export type CheckoutInfo = {
+	cart: any,
+	total: any,
+	address: string | null,
+	token: string | null
 }

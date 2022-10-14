@@ -62,3 +62,9 @@ a {
 .btn-like:hover {
   background: #121c27;
 }
+
+@media screen and (max-width: 933px) {
+  html {
+    font-size: 62.5%;
+  }
+}

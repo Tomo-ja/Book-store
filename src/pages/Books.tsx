@@ -22,8 +22,10 @@ const Books = () => {
 	
 	const { books } = useContext(BookContext)
 
+
 	return(
 		<StyledBookCollection>
+			{books.length === 0 && <h3>Sorry... No Books available...</h3>}
 			{sampleFeaturedBooks.map(book => (
 				<StyledBook key={book.id}>
 					<div className='img-wrapper'>
@@ -33,10 +35,6 @@ const Books = () => {
 				</StyledBook>
 			))}
 		</StyledBookCollection>
-	)
-
-	return (
-		<div>Books</div>
 	)
 }
 
