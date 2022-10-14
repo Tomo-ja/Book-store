@@ -15,8 +15,8 @@ const sampleBook: Book = {
 		image: '', 
 		title: 'sample1', 
 		description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus culpa ex aspernatur, doloremque maxime, mollitia impedit sed quod magni doloribus reiciendis laboriosam in. In illum odio amet aspernatur totam sapiente tempora labore fugiat necessitatibus, nulla, fuga veniam possimus iste.', 
-		author: '', 
-		price: 0
+		author: 'sample sample', 
+		price: '300'
 }
 
 

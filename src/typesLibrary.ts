@@ -4,7 +4,8 @@ export type Book = {
 	title: string,
 	description: string,
 	author: string,
-	price: number
+	price: string,
+	featured?: boolean
 }
 
 export type test2 = {

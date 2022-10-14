@@ -15,12 +15,12 @@ import sampleBookImage from '../asset/bookSample.jpg'
 
 
 const sampleFeaturedBooks: Book[] = [
-	{id: '1', image: '', title: 'sample1', description: '', author: '', price: 0},
-	{id: '2', image: '', title: 'sample2', description: '', author: '', price: 0},
-	{id: '3', image: '', title: 'sample3', description: '', author: '', price: 0},
-	{id: '4', image: '', title: 'sample4', description: '', author: '', price: 0},
-	{id: '5', image: '', title: 'sample5', description: '', author: '', price: 0},
-	{id: '6', image: '', title: 'sample6', description: '', author: '', price: 0},
+	{id: '1', image: '', title: 'sample1', description: '', author: '', price: '0'},
+	{id: '2', image: '', title: 'sample2', description: '', author: '', price: '0'},
+	{id: '3', image: '', title: 'sample3', description: '', author: '', price: '0'},
+	{id: '4', image: '', title: 'sample4', description: '', author: '', price: '0'},
+	{id: '5', image: '', title: 'sample5', description: '', author: '', price: '0'},
+	{id: '6', image: '', title: 'sample6', description: '', author: '', price: '0'},
 
 ]
 

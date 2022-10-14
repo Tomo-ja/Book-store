@@ -16,9 +16,17 @@ li,
 button,
 label,
 input,
-p {
-  all: unset;
+p,
+textarea {
+  border: none;
   font-size: 2rem;
+}
+
+input, textarea{
+  padding: 0.25rem 1rem;
+  border: #121c27 solid 1px;
+  border-radius: 5px;
+  resize: none;
 }
 
 h2 {
