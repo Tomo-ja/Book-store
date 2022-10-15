@@ -48,9 +48,11 @@ const CheckoutForm = () => {
 	}, [orderDetails])
 
 	const handleAddressChange = (e: React.FormEvent<HTMLInputElement>) => {
+		e.preventDefault()
+		const newAddress = e.currentTarget.value
 		setOrderDetails(prev => {
 			const newState = {...prev}
-			newState.address = e.currentTarget.value
+			newState.address = newAddress
 			return newState
 		})
 	}
