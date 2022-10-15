@@ -63,6 +63,12 @@ a {
   background: #121c27;
 }
 
+.error-message{
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
 @media screen and (max-width: 933px) {
   html {
     font-size: 62.5%;

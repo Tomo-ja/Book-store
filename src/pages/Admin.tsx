@@ -12,8 +12,6 @@ import StyledInputGroup from '../components/Form/input.styles';
 
 import { Book } from '../typesLibrary';
 
-import sampleBookImage from '../asset/bookSample.jpg'
-
 const {
 	aws_user_files_s3_bucket_region: region,
 	aws_user_files_s3_bucket: bucket
@@ -91,7 +89,7 @@ const Admin = () => {
 
 						<div className='image-field'>
 							{image ? 
-								<img src={sampleBookImage} alt=''/> 
+								<img src={image} alt=''/> 
 								:
 								<input 
 								type='file' 

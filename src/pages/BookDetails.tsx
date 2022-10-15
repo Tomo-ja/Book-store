@@ -8,18 +8,6 @@ import StyledBookDetail from '../styles/bookDetail'
 
 import { Book } from '../typesLibrary'
 
-import sampleBookImage from '../asset/bookSample.jpg'
-
-const sampleBook: Book = {
-		id: '1', 
-		image: '', 
-		title: 'sample1', 
-		description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus culpa ex aspernatur, doloremque maxime, mollitia impedit sed quod magni doloribus reiciendis laboriosam in. In illum odio amet aspernatur totam sapiente tempora labore fugiat necessitatibus, nulla, fuga veniam possimus iste.', 
-		author: 'sample sample', 
-		price: '300',
-		featured: false
-}
-
 
 const BookDetails = () => {
 
@@ -28,20 +16,18 @@ const BookDetails = () => {
 	const { books } = useContext(BookContext)
 	const { addToCart } = useContext(CartContext)
 
-	let book: Book | undefined = books.find((book: Book) => {
+	const book: Book | undefined = books.find((book: Book) => {
 		return book.id === id
 	})
 
-	// TODO: delete below
-	if(!book) {
-		book = sampleBook
+	if (!book) {
+		return <h3 className='error-message'>Sorry, we couldn't find the book</h3>
 	}
-
 
 	return (
 		<StyledBookDetail>
 			<div className='book-detail-img'>
-				<img src={sampleBookImage} alt={book.title} />
+				<img src={book.image} alt={book.title} />
 			</div>
 			<div className='book-details'>
 				<h2>{book.title}</h2>

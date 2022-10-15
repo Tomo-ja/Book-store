@@ -6,30 +6,23 @@ import StyledBookCollection from '../styles/bookCollection.styles'
 
 import { Book } from '../typesLibrary'
 
-import sampleImage from '../asset/bookSample.jpg'
 import StyledBook from '../styles/book.styles'
-
-const sampleFeaturedBooks: Book[] = [
-	{id: '1', image: '', title: 'sample1', description: '', author: '', price: '0', featured: false},
-	{id: '2', image: '', title: 'sample2', description: '', author: '', price: '0', featured: false},
-	{id: '3', image: '', title: 'sample3', description: '', author: '', price: '0', featured: false},
-	{id: '4', image: '', title: 'sample4', description: '', author: '', price: '0', featured: false},
-	{id: '5', image: '', title: 'sample5', description: '', author: '', price: '0', featured: false},
-	{id: '6', image: '', title: 'sample6', description: '', author: '', price: '0', featured: false},
-]
 
 const Books = () => {
 	
 	const { books } = useContext(BookContext)
 
+	if (books.length === 0) {
+		return <h3 className='error-message'>Sorry... No Books available</h3>
+	}
+
 
 	return(
 		<StyledBookCollection>
-			{books.length === 0 && <h3>Sorry... No Books available...</h3>}
-			{sampleFeaturedBooks.map(book => (
+			{books.map((book: Book) => (
 				<StyledBook key={book.id}>
 					<div className='img-wrapper'>
-						<img src={book.image ? book.image : sampleImage} alt="" />
+						<img src={book.image} alt="" />
 					</div>
 					<Link to={`books/${book.id}`} className='btn-like'>Detail</Link>
 				</StyledBook>
