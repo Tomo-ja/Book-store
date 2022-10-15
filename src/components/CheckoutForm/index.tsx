@@ -48,7 +48,11 @@ const CheckoutForm = () => {
 	}, [orderDetails])
 
 	const handleAddressChange = (e: React.FormEvent<HTMLInputElement>) => {
-
+		setOrderDetails(prev => {
+			const newState = {...prev}
+			newState.address = e.currentTarget.value
+			return newState
+		})
 	}
 
 	const handleCardChange = (e: StripeCardElementChangeEvent) => {

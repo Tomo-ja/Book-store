@@ -32,7 +32,7 @@ const BookDetails = () => {
 			<div className='book-details'>
 				<h2>{book.title}</h2>
 				<p>{book.description}</p>
-				<h3>{book.author}</h3>
+				<h3>written by {book.author}</h3>
 				<h4>Price - $ {book.price}</h4>
 				<button
 					className='btn-like'

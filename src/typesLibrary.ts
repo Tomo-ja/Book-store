@@ -10,6 +10,15 @@ export type Book = {
 	featured: boolean,
 }
 
+export type BookUpload = {
+	image: string,
+	title: string,
+	description: string,
+	author: string,
+	price: string,
+	featured: boolean,
+}
+
 export interface BookInCart extends Book {
 	amount: number
 }

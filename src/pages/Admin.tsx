@@ -10,7 +10,7 @@ import StyledAdmin from '../styles/admin.styles';
 import StyledForm from '../components/Form/form.styles';
 import StyledInputGroup from '../components/Form/input.styles';
 
-import { Book } from '../typesLibrary';
+import { BookUpload } from '../typesLibrary';
 
 const {
 	aws_user_files_s3_bucket_region: region,
@@ -21,9 +21,9 @@ const {
 const Admin = () => {
 
 	const [image, setImage] = useState<string | null>(null)
-	const [bookDetails, setBookDetails] = useState<Book>({id: '', title: '', image: '', author: '', price: '', description: '', featured: false})
+	const [bookDetails, setBookDetails] = useState<BookUpload>({title: '', image: '', author: '', price: '', description: '', featured: false})
 
-	const handleOnChange = (e: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>, name: keyof Book) => {
+	const handleOnChange = (e: React.FormEvent<HTMLInputElement | HTMLTextAreaElement>, name: keyof BookUpload) => {
 		e.preventDefault()
 		if (name === 'featured'){
 			setBookDetails(prev => {
@@ -34,7 +34,7 @@ const Admin = () => {
 		}
 		const newValue = e.currentTarget.value
 		setBookDetails(prev => {
-			const newState: Book = {...prev}
+			const newState: BookUpload = {...prev}
 			newState[name] = newValue
 			return newState
 		})
@@ -45,7 +45,9 @@ const Admin = () => {
 		try{
 			if(!bookDetails || !bookDetails.price) return
 			await API.graphql(graphqlOperation(createBook, { input: bookDetails}))
-			setBookDetails({id: '', title: '', image: '', author: '', price: '', description: '', featured: false})
+			setBookDetails({title: '', image: '', author: '', price: '', description: '', featured: false})
+			window.location.reload();
+
 		} catch (err) {
 			console.log('error creating new book', err)
 		}
