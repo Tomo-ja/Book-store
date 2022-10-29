@@ -1,3 +1,17 @@
+# Mini e-commerce app for book lover
+application deploy on [here](http://ookstore-20221014214828-hostingbucket-dev.s3-website.ca-central-1.amazonaws.com/)
+
+### **since deploy on with http stripe payment service doesn't work**
+
+## How to use
+- You can browse online book stores as well as add to a shopping cart and process payment.
+- Owner can add new item on the app via hidden path /admin
+
+You can use following account as both owner and user to test
+- username: admin
+- password: password
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
