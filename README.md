@@ -1,46 +1,41 @@
-# Getting Started with Create React App
+# Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is mini E-commerce application specified books, which is to show AWS knowledge on portfolio.
 
-## Available Scripts
+<img src="/Preview.png" alt="Preview of the App">
 
-In the project directory, you can run:
+Users can browse online book stores as well as add to a shopping cart and process payment as basic E-commerce application's functionality.
 
-### `npm start`
+Owner can add new items on this application via hidden path /admin
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+⚠️ For security reason, I replaced Stripe api key with fake one. It means payment process always failed on purpose.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Motivation
 
-### `npm test`
+As a complete web user-infraction application using React.js, I decided to create this. I focused to develope essential functionalities to be a E-commerce application and how to collaborate with AWS as backend side.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Understanding how AWS works took me some time, however, throughout this project, I've got a solid confident to use AWS and my React.js skill. As well as users can do CRUD action within the application, I developed CRUD actions between application and database on hidden path /admin without going to AWS console.
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You can try with owner account:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- user name: admin
+- password: password
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This application is available on [AWS](http://ookstore-20221014214828-hostingbucket-dev.s3-website.ca-central-1.amazonaws.com/)
 
-### `npm run eject`
+or
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+git clone git@github.com:Tomo-ja/Book-store.git
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Language and Libraries
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- React.js
+- TypeScript
+- Styled components
+- AWS (amplify, lambda)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Thank you for reading through all of this. I hope you find some fun :)
