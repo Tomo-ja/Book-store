@@ -1,60 +1,41 @@
-# Mini e-commerce app for book lover
-application deploy on [here](http://ookstore-20221014214828-hostingbucket-dev.s3-website.ca-central-1.amazonaws.com/)
+# Overview
 
-### **since deploy on with http stripe payment service doesn't work**
+This is mini E-commerce application specified books, which is to show AWS knowledge on portfolio.
 
-## How to use
-- You can browse online book stores as well as add to a shopping cart and process payment.
-- Owner can add new item on the app via hidden path /admin
+<img src="/Preview.png" alt="Preview of the App">
 
-You can use following account as both owner and user to test
-- username: admin
+Users can browse online book stores as well as add to a shopping cart and process payment as basic E-commerce application's functionality.
+
+Owner can add new items on this application via hidden path /admin
+
+⚠️ For security reason, I replaced Stripe api key with fake one. It means payment process always failed on purpose.
+
+## Motivation
+
+As a complete web user-infraction application using React.js, I decided to create this. I focused to develope essential functionalities to be a E-commerce application and how to collaborate with AWS as backend side.
+
+Understanding how AWS works took me some time, however, throughout this project, I've got a solid confident to use AWS and my React.js skill. As well as users can do CRUD action within the application, I developed CRUD actions between application and database on hidden path /admin without going to AWS console.
+
+## Usage
+
+You can try with owner account:
+
+- user name: admin
 - password: password
 
+This application is available on [AWS](http://ookstore-20221014214828-hostingbucket-dev.s3-website.ca-central-1.amazonaws.com/)
 
-# Getting Started with Create React App
+or
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```
+git clone git@github.com:Tomo-ja/Book-store.git
+```
 
-## Available Scripts
+## Language and Libraries
 
-In the project directory, you can run:
+- React.js
+- TypeScript
+- Styled components
+- AWS (amplify, lambda)
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Thank you for reading through all of this. I hope you find some fun :)
