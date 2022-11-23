@@ -7,14 +7,16 @@ const StyledBookDetail = styled.section`
   align-items: center;
 
   width: 90%;
-  height: 80vh;
-
   margin: 5rem auto;
 
   text-align: center;
 
 	.book-detail-img{
 		text-align: center;
+		width: 45%;
+		img{
+			width: 100%;
+		}
 	}
 
 	.book-details{
