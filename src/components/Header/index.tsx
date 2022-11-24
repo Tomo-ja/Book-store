@@ -9,7 +9,7 @@ const Header = () => {
 	return (
 		<StyledHeader>
 			<nav>
-				<h1>Book Store</h1>
+				<h1><Link to='/'>Book Store</Link></h1>
 				<ul>
 					<li><Link to='/'>Home</Link></li>
 					<li><Link to='/books'>Books</Link></li>
