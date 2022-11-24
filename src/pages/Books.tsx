@@ -24,7 +24,7 @@ const Books = () => {
 					<div className='img-wrapper'>
 						<img src={book.image} alt="" />
 					</div>
-					<Link to={`books/${book.id}`} className='btn-like'>Detail</Link>
+					<Link to={`/books/${book.id}`} className='btn-like'>Detail</Link>
 				</StyledBook>
 			))}
 		</StyledBookCollection>

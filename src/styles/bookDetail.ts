@@ -8,14 +8,12 @@ const StyledBookDetail = styled.section`
 
   width: 90%;
   margin: 5rem auto;
-
   text-align: center;
 
 	.book-detail-img{
 		text-align: center;
-		width: 45%;
 		img{
-			width: 100%;
+			max-width: 350px;
 		}
 	}
 
@@ -23,10 +21,11 @@ const StyledBookDetail = styled.section`
 		display: flex;
 		flex: 1 1 50rem;
 		flex-direction: column;
-		justify-content: space-evenly;
-
-		height: 75%;
 		padding: 0 5rem;
+
+		h2, h3, h4, p{
+			margin-bottom: .5em;
+		}
 	}
 
 `

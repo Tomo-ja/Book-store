@@ -9,7 +9,6 @@ const StyledFooter = styled.footer`
 	p{
 		font-size: 13px;
 	}
-
 `
 
 export default StyledFooter
