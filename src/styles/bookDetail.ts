@@ -15,6 +15,9 @@ const StyledBookDetail = styled.section`
 
 	.book-detail-img{
 		text-align: center;
+		img{
+			max-width: 350px;
+		}
 	}
 
 	.book-details{

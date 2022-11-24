@@ -11,6 +11,7 @@ import Admin from './pages/Admin';
 import Error from './pages/Error';
 
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 import awsExports from './aws-exports'
 Amplify.configure(awsExports)
@@ -29,6 +30,7 @@ function App() {
         <Route path='/books/:id' element={<BookDetails />} />
         <Route path='*' element={<Error />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
