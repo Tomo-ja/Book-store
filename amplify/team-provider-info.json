@@ -22,7 +22,7 @@
         },
         "createOrder": {
           "deploymentBucketName": "amplify-bookstore-dev-95218-deployment",
-          "s3Key": "amplify-builds/createOrder-686179356648494a3562-build.zip"
+          "s3Key": "amplify-builds/createOrder-30676343317667777953-build.zip"
         }
       },
       "storage": {

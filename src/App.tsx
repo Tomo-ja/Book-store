@@ -13,7 +13,7 @@ import Error from './pages/Error';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-import awsExports from './aws-exports'
+import awsExports from './aws-exports.mjs'
 Amplify.configure(awsExports)
 
 
