@@ -4,7 +4,7 @@ import { API, graphqlOperation, Storage } from "aws-amplify";
 import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import { createBook } from '../graphql/mutations'
-import config from '../aws-exports'
+import config from '../aws-exports.mjs'
 
 import StyledAdmin from '../styles/admin.styles';
 import StyledForm from '../components/Form/form.styles';
